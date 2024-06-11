@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@6..12,300&display=swap');
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+</style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+</style>
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: "Nunito Sans", sans-serif;
+    scroll-behavior: smooth;
+}
+.wrapper {
+    width: 1024px;
+    margin: auto;
+    padding: 20px 0px 20px 0px;
+}
+
+/*
+* menu
+*/
+nav {
+    background-color: #0f1d2e;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+nav > .wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.menu {
+    width: 50%;
+}
+
+.menu > ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-between;
+}
+
+.menu > ul > li > a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Kanit", sans-serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo > img {
+    height: 45px;
+}
+
+/*
+* Hero / jumbotron
+*/
+header {
+    background: url('../images/bg-header.jpeg');
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: "Kanit", sans-serif;
+    letter-spacing: 5px ;
+    text-shadow: 0 0 4px #000;
+}
+.header-opacity {
+    background-color: #0f1d2e;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header-jumbotron {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-jumbotron > h4 {
+    color: #ffce10;
+    font-size: 2rem;
+    margin: 0px;
+    padding: 0px;
+}
+.header-jumbotron > h5 {
+    color: #fff;
+    margin: 0px;
+    padding: 5px;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    text-transform: uppercase;
+}
+.header-jumbotron > p {
+    padding: 5px;
+    margin: 20px 5px 20px 5px;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    text-shadow: none;
+}
+
+.button {
+    background-color: #ffce10;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    font-family: "Kanit", sans-serif;
+}
+
+.button-xl {
+    font-size: 1.4rem;
+    padding: 20px;
+}
+
+/*
+* statistic
+*/
+#statistic {
+    background-color: #1e3a5c;
+    color: #fff;
+    font-family: "Kanit", sans-serif;
+}
+
+#statistic > .wrapper {
+    padding: 50px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#statistic > .wrapper > div {
+    text-align: center;
+}
+
+#statistic > .wrapper > div > p {
+    font-size: 3.5rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+#statistic > .wrapper > div > p > i {
+    margin-right: 10px;
+    font-size: 3.5rem;
+}
+#statistic > .wrapper > div > small {
+    font-size: 1.5rem;
+}
+
+/*
+* premium course
+*/
+#Premium-course {
+    background-color: #0f1d2e;
+    color: #fff;
+}
+
+#Premium-course > .wrapper {
+    padding: 50px 0px 50px 0px;
+}
+
+#Premium-course > .wrapper > h4 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Kanit", sans-serif;
+}
+
+#Premium-course > .wrapper > h4 > span {
+    color: #ffce10;
+}
+
+#Premium-course > .wrapper > p {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 50px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 50px;
+}
+.grid > .item {
+    border: 1px solid #666;
+    background-color: #333;
+    border-radius: 5px;
+    position: relative;
+}
+
+.grid > .item > img {
+    width: 15%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.grid > .item > .item-detail {
+    padding: 30px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: 70%;
+}
+.grid > .item > .item-detail > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.grid > .item > .item-detail > div > small {
+    color: #ccc;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: normal;
+}
+.grid > .item > .item-detail > div > a {
+    font-size: 1rem;
+    color: #333;
+    font-weight: normal;
+}
+
+/*
+* Tentang Saya
+*/
+#tentang-saya {
+    background-color: #DBE2EF;
+    color: #333;
+}
+
+#tentang-saya > .wrapper {
+    padding: 50px 0px 50px 0px;
+}
+
+#tentang-saya > .wrapper > h4 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Kanit", sans-serif;
+}
+
+#tentang-saya > .wrapper > p {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 50px;
+}
+
+#tentang-saya > .wrapper > div {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tentang-saya > .wrapper > div > .foto {
+    width: 30%;
+}
+
+#tentang-saya > .wrapper > div > .foto > img {
+    max-width: 100%;
+}
+
+#tentang-saya > .wrapper > div > .desc {
+    width: 70%;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+#tentang-saya > .wrapper > div > .desc > p {
+    margin: 0px 0px 10px 0px;
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+}
+
+#tentang-saya > .wrapper > div > .desc > .social {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+#tentang-saya > .wrapper > div > .desc > .social > a {
+    color: #028391;
+}
+
+/*
+* free course
+*/
+#free-course {
+    background-color: #1e3a5c;
+    color: #fff;
+}
+
+#free-course > .wrapper {
+    padding: 50px 0px 50px 0px;
+}
+
+#free-course > .wrapper > h4 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Kanit", sans-serif;
+
+}
+
+#free-course > .wrapper > h4 > span {
+    color: #ffce10;
+}
+
+#free-course > .wrapper > p {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 50px;
+}
+
+#free-course > .wrapper > .grid > .item {
+    background-color: #222831;
+    margin: 0px;
+    padding: 0px;
+}
+
+#free-course > .wrapper > .grid > .item > .item-detail {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.4rem;
+    width: 100%;
+}
+
+#free-course > .wrapper > .grid > .item > .item-detail > img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#free-course > .wrapper > .grid > .item > .item-detail > div {
+    padding: 10px 20px 10px 20px;
+}
+
+/*
+*copyright
+*/
+footer {
+    background-color: #0f1d2e;
+    color: #fff;
+    text-align: center;
+}
+
+footer > .wrapper {
+    padding: 30px 0px 30px 0px;
+}
+
+/*
+* hamburger menu
+*/
+button.hamburger-menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+button.hamburger-menu > i {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+button.hamburger-menu > i.icon-close {
+    display: none;
+}
+
+/*
+* 1024, 900. 768. 600, 450
+*/
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #statistic > .wrapper > div > p {
+        font-size: 2.5rem;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #statistic > .wrapper > div > p > i {
+        font-size: 2.5rem;
+    }
+
+    #statistic > .wrapper > div > small {
+        font-size: 1rem;
+    }
+
+    .grid {
+        grid-template-columns: 45% 45%;
+    }
+
+    .item > img {
+        width: 8%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .menu {
+        width: 60%;
+    }
+    .header-jumbotron > h4 {
+        font-size: 1.5rem;
+    }
+    .header-jumbotron > h5 {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+    .header-jumbotron > p {
+        font-size: 0.8rem;
+    }
+
+    .button {
+        padding: 5px;
+    }
+    .button-xl {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    #statistic > .wrapper > div > p {
+        font-size: 1.5rem;
+        margin: 0px;
+    }
+
+    #statistic > .wrapper > div > p > i {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: 100%;
+    }
+
+    #statistic > .wrapper {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    #statistic > .wrapper > div {
+        display: flex;
+    }
+
+    #statistic > .wrapper > div > small {
+        font-size: 1.5rem;
+        padding-left: 10px;
+    }
+    #tentang-saya > .wrapper > div {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #tentang-saya > .wrapper > div > .foto {
+        width: 50%;
+    }
+    #tentang-saya > .wrapper > div > .foto > img {
+        max-width: 100%;
+    }
+
+    #tentang-saya > .wrapper > div > .desc {
+        width: 70%;
+        padding: 20px;
+        margin: 10px;
+    
+    }
+    
+    #tentang-saya > .wrapper > div > .desc > .social {
+        margin: auto;
+    }
+
+    button.hamburger-menu {
+        display: inline;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .tampil {
+        display: inline;
+    }
+
+    .tampil > ul {
+        flex-direction: column;
+        background-color: #000;
+        width: 100%;
+        position: fixed;
+        top: 85px;
+        left: 0;
+    }
+
+    .tampil > ul > li {
+        padding: 10px 20px 10px 20px;
+    }
+
+}
